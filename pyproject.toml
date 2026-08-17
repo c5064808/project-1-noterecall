@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "noterecall"
+version = "0.1.0"
+description = "Semantic search over personal markdown notes with a BM25 baseline"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "sentence-transformers",
+    "rank-bm25",
+    "pinecone",
+    "streamlit",
+    "matplotlib",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["noterecall*", "evaluation*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

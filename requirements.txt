@@ -1,0 +1,8 @@
+numpy>=1.26
+sentence-transformers>=3.0
+rank-bm25>=0.2.2
+pinecone>=5.0
+streamlit>=1.36
+matplotlib>=3.8
+pyyaml>=6.0
+pytest>=8.0

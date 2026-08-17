@@ -1,0 +1,181 @@
+chunk_size,method,query_id,query,precision,recall,reciprocal_rank,ndcg,latency_ms,top_note
+128,semantic,q01,how does approximate nearest neighbour search work,0.4,1.0,1.0,1.0,3.0481,retrieval/ann-search.md
+128,semantic,q02,why is it quicker to settle for a slightly wrong match when looking things up by vector,0.4,1.0,1.0,1.0,3.2571,retrieval/fuzzy-vector-lookup.md
+128,semantic,q03,what does it actually mean for two pieces of text to be alike,0.2,0.5,1.0,0.6131,3.1217,embeddings/measuring-closeness.md
+128,semantic,q04,should I scale vectors to the same length before I compare them,0.4,1.0,1.0,0.9197,3.0681,embeddings/cosine-vs-dot-product.md
+128,semantic,q05,how do I tell whether a gap between two systems is real or just luck,0.6,1.0,1.0,1.0,2.9874,stats/is-the-difference-real.md
+128,semantic,q06,cutting a long document into pieces before indexing it,0.2,1.0,1.0,1.0,3.0136,retrieval/chunking-strategies.md
+128,semantic,q07,keeping my notes on my own machine instead of sending them to a company,0.2,0.5,1.0,0.6131,3.1228,module/ethics-approval.md
+128,semantic,q08,why the tool never writes an answer of its own,0.2,0.5,0.5,0.3869,3.0405,module/ethics-approval.md
+128,semantic,q09,I know I wrote something down but I cannot remember which words I used,0.2,1.0,0.3333,0.5,3.0351,embeddings/subword-tokenisation.md
+128,semantic,q10,how does the model break unusual words into smaller units,0.2,1.0,1.0,1.0,3.0771,embeddings/subword-tokenisation.md
+128,semantic,q11,externally-managed-environment,0.2,1.0,1.0,1.0,3.3493,python/venv-and-pip.md
+128,semantic,q12,PYTORCH_ENABLE_MPS_FALLBACK,0.2,1.0,1.0,1.0,3.0978,misc/laptop-setup.md
+128,semantic,q13,describe_index_stats,0.2,1.0,0.5,0.6309,3.4375,python/profiling-and-timing.md
+128,semantic,q14,SHUREC7 ethics reference,0.2,1.0,1.0,1.0,3.4782,module/ethics-approval.md
+128,semantic,q15,karpukhin2020dpr,0.2,0.5,0.3333,0.3066,2.9608,module/presentation-plan.md
+128,semantic,q16,could not broadcast input array from shape,0.2,1.0,1.0,1.0,3.0007,python/numpy-broadcasting.md
+128,semantic,q17,snakeviz,0.2,1.0,1.0,1.0,3.4508,python/profiling-and-timing.md
+128,semantic,q18,what do the k1 and b parameters in BM25 do,0.2,1.0,1.0,1.0,3.1238,retrieval/bm25-and-tfidf.md
+128,semantic,q19,how is nDCG calculated,0.2,1.0,1.0,1.0,3.3933,retrieval/evaluation-metrics.md
+128,semantic,q20,how many dimensions should the embeddings have,0.2,1.0,1.0,1.0,3.0084,embeddings/embedding-dimensions.md
+128,semantic,q21,maximum sequence length of all-MiniLM-L6-v2,0.4,1.0,0.5,0.6509,2.9503,embeddings/contrastive-training.md
+128,semantic,q22,in-batch negatives during training,0.2,1.0,1.0,1.0,3.1122,embeddings/contrastive-training.md
+128,semantic,q23,combining a dense ranking and a keyword ranking without tuning a weight,0.2,1.0,1.0,1.0,3.0769,retrieval/hybrid-fusion.md
+128,semantic,q24,how should I measure query latency properly,0.2,0.5,1.0,0.6131,3.0451,retrieval/query-latency.md
+128,semantic,q25,when should a dataclass be frozen,0.2,1.0,1.0,1.0,3.0498,python/dataclasses.md
+128,semantic,q26,argparse subcommand with an option that can be repeated,0.2,1.0,1.0,1.0,2.958,python/argparse-subcommands.md
+128,semantic,q27,pytest tmp_path for tests that write files,0.2,1.0,1.0,1.0,2.9568,python/pytest-notes.md
+128,semantic,q28,report word limit and submission deadline,0.2,1.0,0.5,0.6309,3.369,module/supervisor-meeting-11-feb.md
+128,semantic,q29,threats to validity from writing and judging my own evaluation set,0.4,0.6667,0.3333,0.4162,2.9587,module/assignment-brief.md
+128,semantic,q30,effect size versus statistical significance,0.4,1.0,1.0,1.0,3.2609,stats/effect-size.md
+128,keyword,q01,how does approximate nearest neighbour search work,0.2,0.5,1.0,0.6131,0.0636,retrieval/ann-search.md
+128,keyword,q02,why is it quicker to settle for a slightly wrong match when looking things up by vector,0.2,0.5,1.0,0.6131,0.0823,retrieval/fuzzy-vector-lookup.md
+128,keyword,q03,what does it actually mean for two pieces of text to be alike,0.2,0.5,1.0,0.6131,0.0652,embeddings/measuring-closeness.md
+128,keyword,q04,should I scale vectors to the same length before I compare them,0.4,1.0,1.0,1.0,0.0805,embeddings/measuring-closeness.md
+128,keyword,q05,how do I tell whether a gap between two systems is real or just luck,0.4,0.6667,1.0,0.7654,0.0927,stats/hypothesis-testing.md
+128,keyword,q06,cutting a long document into pieces before indexing it,0.2,1.0,0.2,0.3869,0.0573,module/supervisor-meeting-11-feb.md
+128,keyword,q07,keeping my notes on my own machine instead of sending them to a company,0.0,0.0,0.0,0.0,0.0805,retrieval/fuzzy-vector-lookup.md
+128,keyword,q08,why the tool never writes an answer of its own,0.0,0.0,0.0,0.0,0.0579,stats/sampling-and-bias.md
+128,keyword,q09,I know I wrote something down but I cannot remember which words I used,0.2,1.0,1.0,1.0,0.096,misc/writing-workflow.md
+128,keyword,q10,how does the model break unusual words into smaller units,0.2,1.0,1.0,1.0,0.0687,embeddings/subword-tokenisation.md
+128,keyword,q11,externally-managed-environment,0.2,1.0,1.0,1.0,0.0313,python/venv-and-pip.md
+128,keyword,q12,PYTORCH_ENABLE_MPS_FALLBACK,0.2,1.0,1.0,1.0,0.0168,misc/laptop-setup.md
+128,keyword,q13,describe_index_stats,0.2,1.0,1.0,1.0,0.0152,retrieval/vector-databases.md
+128,keyword,q14,SHUREC7 ethics reference,0.2,1.0,1.0,1.0,0.0321,module/ethics-approval.md
+128,keyword,q15,karpukhin2020dpr,0.4,1.0,1.0,1.0,0.0171,misc/latex-and-references.md
+128,keyword,q16,could not broadcast input array from shape,0.2,1.0,1.0,1.0,0.0586,python/numpy-broadcasting.md
+128,keyword,q17,snakeviz,0.2,1.0,1.0,1.0,0.0183,python/profiling-and-timing.md
+128,keyword,q18,what do the k1 and b parameters in BM25 do,0.2,1.0,1.0,1.0,0.0556,retrieval/bm25-and-tfidf.md
+128,keyword,q19,how is nDCG calculated,0.2,1.0,1.0,1.0,0.0395,retrieval/evaluation-metrics.md
+128,keyword,q20,how many dimensions should the embeddings have,0.2,1.0,1.0,1.0,0.0568,embeddings/embedding-dimensions.md
+128,keyword,q21,maximum sequence length of all-MiniLM-L6-v2,0.4,1.0,1.0,0.9197,0.0629,embeddings/sentence-transformers.md
+128,keyword,q22,in-batch negatives during training,0.2,1.0,1.0,1.0,0.0417,embeddings/contrastive-training.md
+128,keyword,q23,combining a dense ranking and a keyword ranking without tuning a weight,0.2,1.0,1.0,1.0,0.0677,retrieval/hybrid-fusion.md
+128,keyword,q24,how should I measure query latency properly,0.2,0.5,0.3333,0.3066,0.0627,embeddings/subword-tokenisation.md
+128,keyword,q25,when should a dataclass be frozen,0.2,1.0,1.0,1.0,0.0353,python/dataclasses.md
+128,keyword,q26,argparse subcommand with an option that can be repeated,0.2,1.0,1.0,1.0,0.0514,python/argparse-subcommands.md
+128,keyword,q27,pytest tmp_path for tests that write files,0.2,1.0,1.0,1.0,0.0501,python/pytest-notes.md
+128,keyword,q28,report word limit and submission deadline,0.2,1.0,0.5,0.6309,0.0501,misc/latex-and-references.md
+128,keyword,q29,threats to validity from writing and judging my own evaluation set,0.6,1.0,1.0,1.0,0.0697,retrieval/evaluation-metrics.md
+128,keyword,q30,effect size versus statistical significance,0.4,1.0,1.0,1.0,0.0522,stats/effect-size.md
+256,semantic,q01,how does approximate nearest neighbour search work,0.4,1.0,1.0,1.0,2.9876,retrieval/ann-search.md
+256,semantic,q02,why is it quicker to settle for a slightly wrong match when looking things up by vector,0.4,1.0,1.0,1.0,2.9333,retrieval/fuzzy-vector-lookup.md
+256,semantic,q03,what does it actually mean for two pieces of text to be alike,0.2,0.5,1.0,0.6131,3.0123,embeddings/measuring-closeness.md
+256,semantic,q04,should I scale vectors to the same length before I compare them,0.4,1.0,0.5,0.6934,3.0815,embeddings/embedding-dimensions.md
+256,semantic,q05,how do I tell whether a gap between two systems is real or just luck,0.4,0.6667,1.0,0.7654,3.0743,stats/is-the-difference-real.md
+256,semantic,q06,cutting a long document into pieces before indexing it,0.2,1.0,1.0,1.0,3.0152,retrieval/chunking-strategies.md
+256,semantic,q07,keeping my notes on my own machine instead of sending them to a company,0.2,0.5,0.5,0.3869,3.0544,module/supervisor-meeting-11-feb.md
+256,semantic,q08,why the tool never writes an answer of its own,0.2,0.5,1.0,0.6131,3.0682,module/supervisor-meeting-11-feb.md
+256,semantic,q09,I know I wrote something down but I cannot remember which words I used,0.2,1.0,0.5,0.6309,2.9971,module/presentation-plan.md
+256,semantic,q10,how does the model break unusual words into smaller units,0.2,1.0,1.0,1.0,3.0696,embeddings/subword-tokenisation.md
+256,semantic,q11,externally-managed-environment,0.2,1.0,1.0,1.0,3.3408,python/venv-and-pip.md
+256,semantic,q12,PYTORCH_ENABLE_MPS_FALLBACK,0.2,1.0,1.0,1.0,2.9659,misc/laptop-setup.md
+256,semantic,q13,describe_index_stats,0.2,1.0,1.0,1.0,3.3056,retrieval/vector-databases.md
+256,semantic,q14,SHUREC7 ethics reference,0.2,1.0,1.0,1.0,3.4509,module/ethics-approval.md
+256,semantic,q15,karpukhin2020dpr,0.2,0.5,0.3333,0.3066,3.0649,module/supervisor-meeting-11-feb.md
+256,semantic,q16,could not broadcast input array from shape,0.2,1.0,1.0,1.0,3.0552,python/numpy-broadcasting.md
+256,semantic,q17,snakeviz,0.2,1.0,1.0,1.0,3.2372,python/profiling-and-timing.md
+256,semantic,q18,what do the k1 and b parameters in BM25 do,0.2,1.0,1.0,1.0,2.9347,retrieval/bm25-and-tfidf.md
+256,semantic,q19,how is nDCG calculated,0.2,1.0,1.0,1.0,3.2909,retrieval/evaluation-metrics.md
+256,semantic,q20,how many dimensions should the embeddings have,0.2,1.0,1.0,1.0,3.024,embeddings/embedding-dimensions.md
+256,semantic,q21,maximum sequence length of all-MiniLM-L6-v2,0.4,1.0,0.5,0.6509,3.0705,embeddings/contrastive-training.md
+256,semantic,q22,in-batch negatives during training,0.2,1.0,1.0,1.0,3.1084,embeddings/contrastive-training.md
+256,semantic,q23,combining a dense ranking and a keyword ranking without tuning a weight,0.2,1.0,1.0,1.0,3.0491,retrieval/hybrid-fusion.md
+256,semantic,q24,how should I measure query latency properly,0.2,0.5,1.0,0.6131,3.0277,retrieval/query-latency.md
+256,semantic,q25,when should a dataclass be frozen,0.2,1.0,1.0,1.0,2.9375,python/dataclasses.md
+256,semantic,q26,argparse subcommand with an option that can be repeated,0.2,1.0,1.0,1.0,2.9385,python/argparse-subcommands.md
+256,semantic,q27,pytest tmp_path for tests that write files,0.2,1.0,1.0,1.0,2.9943,python/pytest-notes.md
+256,semantic,q28,report word limit and submission deadline,0.2,1.0,1.0,1.0,3.2774,module/assignment-brief.md
+256,semantic,q29,threats to validity from writing and judging my own evaluation set,0.4,0.6667,0.3333,0.4162,3.0509,module/assignment-brief.md
+256,semantic,q30,effect size versus statistical significance,0.4,1.0,1.0,1.0,3.2749,stats/effect-size.md
+256,keyword,q01,how does approximate nearest neighbour search work,0.4,1.0,1.0,0.8503,0.0494,retrieval/ann-search.md
+256,keyword,q02,why is it quicker to settle for a slightly wrong match when looking things up by vector,0.4,1.0,1.0,0.8503,0.0633,retrieval/fuzzy-vector-lookup.md
+256,keyword,q03,what does it actually mean for two pieces of text to be alike,0.2,0.5,1.0,0.6131,0.0496,embeddings/measuring-closeness.md
+256,keyword,q04,should I scale vectors to the same length before I compare them,0.4,1.0,1.0,0.9197,0.0628,embeddings/measuring-closeness.md
+256,keyword,q05,how do I tell whether a gap between two systems is real or just luck,0.6,1.0,1.0,0.9469,0.0717,stats/hypothesis-testing.md
+256,keyword,q06,cutting a long document into pieces before indexing it,0.2,1.0,0.25,0.4307,0.0489,embeddings/measuring-closeness.md
+256,keyword,q07,keeping my notes on my own machine instead of sending them to a company,0.2,0.5,0.2,0.2372,0.0637,stats/is-the-difference-real.md
+256,keyword,q08,why the tool never writes an answer of its own,0.0,0.0,0.0,0.0,0.0452,misc/writing-workflow.md
+256,keyword,q09,I know I wrote something down but I cannot remember which words I used,0.2,1.0,1.0,1.0,0.0752,misc/writing-workflow.md
+256,keyword,q10,how does the model break unusual words into smaller units,0.2,1.0,1.0,1.0,0.0538,embeddings/subword-tokenisation.md
+256,keyword,q11,externally-managed-environment,0.2,1.0,1.0,1.0,0.0239,python/venv-and-pip.md
+256,keyword,q12,PYTORCH_ENABLE_MPS_FALLBACK,0.2,1.0,1.0,1.0,0.0121,misc/laptop-setup.md
+256,keyword,q13,describe_index_stats,0.2,1.0,1.0,1.0,0.011,retrieval/vector-databases.md
+256,keyword,q14,SHUREC7 ethics reference,0.2,1.0,1.0,1.0,0.0235,module/ethics-approval.md
+256,keyword,q15,karpukhin2020dpr,0.4,1.0,1.0,1.0,0.0124,misc/latex-and-references.md
+256,keyword,q16,could not broadcast input array from shape,0.2,1.0,1.0,1.0,0.045,python/numpy-broadcasting.md
+256,keyword,q17,snakeviz,0.2,1.0,1.0,1.0,0.0116,python/profiling-and-timing.md
+256,keyword,q18,what do the k1 and b parameters in BM25 do,0.2,1.0,1.0,1.0,0.0441,retrieval/bm25-and-tfidf.md
+256,keyword,q19,how is nDCG calculated,0.2,1.0,1.0,1.0,0.0305,retrieval/evaluation-metrics.md
+256,keyword,q20,how many dimensions should the embeddings have,0.2,1.0,1.0,1.0,0.0448,embeddings/embedding-dimensions.md
+256,keyword,q21,maximum sequence length of all-MiniLM-L6-v2,0.4,1.0,1.0,0.9197,0.049,embeddings/sentence-transformers.md
+256,keyword,q22,in-batch negatives during training,0.2,1.0,1.0,1.0,0.0317,embeddings/contrastive-training.md
+256,keyword,q23,combining a dense ranking and a keyword ranking without tuning a weight,0.2,1.0,1.0,1.0,0.053,retrieval/hybrid-fusion.md
+256,keyword,q24,how should I measure query latency properly,0.4,1.0,0.5,0.6241,0.0487,embeddings/subword-tokenisation.md
+256,keyword,q25,when should a dataclass be frozen,0.2,1.0,1.0,1.0,0.027,python/dataclasses.md
+256,keyword,q26,argparse subcommand with an option that can be repeated,0.2,1.0,1.0,1.0,0.0408,python/argparse-subcommands.md
+256,keyword,q27,pytest tmp_path for tests that write files,0.2,1.0,1.0,1.0,0.0392,python/pytest-notes.md
+256,keyword,q28,report word limit and submission deadline,0.2,1.0,0.5,0.6309,0.039,misc/latex-and-references.md
+256,keyword,q29,threats to validity from writing and judging my own evaluation set,0.6,1.0,1.0,0.9469,0.0542,retrieval/evaluation-metrics.md
+256,keyword,q30,effect size versus statistical significance,0.4,1.0,1.0,1.0,0.0402,stats/hypothesis-testing.md
+512,semantic,q01,how does approximate nearest neighbour search work,0.4,1.0,1.0,1.0,3.0339,retrieval/ann-search.md
+512,semantic,q02,why is it quicker to settle for a slightly wrong match when looking things up by vector,0.4,1.0,1.0,1.0,3.0668,retrieval/fuzzy-vector-lookup.md
+512,semantic,q03,what does it actually mean for two pieces of text to be alike,0.4,1.0,1.0,0.8772,3.0292,embeddings/measuring-closeness.md
+512,semantic,q04,should I scale vectors to the same length before I compare them,0.4,1.0,1.0,1.0,2.99,embeddings/cosine-vs-dot-product.md
+512,semantic,q05,how do I tell whether a gap between two systems is real or just luck,0.4,0.6667,1.0,0.7654,3.0433,stats/is-the-difference-real.md
+512,semantic,q06,cutting a long document into pieces before indexing it,0.2,1.0,1.0,1.0,2.979,retrieval/chunking-strategies.md
+512,semantic,q07,keeping my notes on my own machine instead of sending them to a company,0.2,0.5,1.0,0.6131,2.986,module/ethics-approval.md
+512,semantic,q08,why the tool never writes an answer of its own,0.2,0.5,1.0,0.6131,2.9582,module/supervisor-meeting-11-feb.md
+512,semantic,q09,I know I wrote something down but I cannot remember which words I used,0.2,1.0,0.5,0.6309,2.9638,module/presentation-plan.md
+512,semantic,q10,how does the model break unusual words into smaller units,0.2,1.0,1.0,1.0,3.031,embeddings/subword-tokenisation.md
+512,semantic,q11,externally-managed-environment,0.2,1.0,1.0,1.0,3.3271,python/venv-and-pip.md
+512,semantic,q12,PYTORCH_ENABLE_MPS_FALLBACK,0.2,1.0,1.0,1.0,3.0519,misc/laptop-setup.md
+512,semantic,q13,describe_index_stats,0.2,1.0,1.0,1.0,3.3361,retrieval/vector-databases.md
+512,semantic,q14,SHUREC7 ethics reference,0.2,1.0,1.0,1.0,3.3209,module/ethics-approval.md
+512,semantic,q15,karpukhin2020dpr,0.2,0.5,0.5,0.3869,3.0061,module/presentation-plan.md
+512,semantic,q16,could not broadcast input array from shape,0.2,1.0,1.0,1.0,3.0408,python/numpy-broadcasting.md
+512,semantic,q17,snakeviz,0.2,1.0,1.0,1.0,3.2702,python/profiling-and-timing.md
+512,semantic,q18,what do the k1 and b parameters in BM25 do,0.2,1.0,1.0,1.0,3.0086,retrieval/bm25-and-tfidf.md
+512,semantic,q19,how is nDCG calculated,0.2,1.0,1.0,1.0,3.2257,retrieval/evaluation-metrics.md
+512,semantic,q20,how many dimensions should the embeddings have,0.2,1.0,1.0,1.0,2.9828,embeddings/embedding-dimensions.md
+512,semantic,q21,maximum sequence length of all-MiniLM-L6-v2,0.4,1.0,1.0,0.9197,2.8827,embeddings/sentence-transformers.md
+512,semantic,q22,in-batch negatives during training,0.2,1.0,1.0,1.0,3.041,embeddings/contrastive-training.md
+512,semantic,q23,combining a dense ranking and a keyword ranking without tuning a weight,0.2,1.0,1.0,1.0,3.024,retrieval/hybrid-fusion.md
+512,semantic,q24,how should I measure query latency properly,0.2,0.5,1.0,0.6131,3.0262,retrieval/query-latency.md
+512,semantic,q25,when should a dataclass be frozen,0.2,1.0,1.0,1.0,3.0784,python/dataclasses.md
+512,semantic,q26,argparse subcommand with an option that can be repeated,0.2,1.0,1.0,1.0,2.9138,python/argparse-subcommands.md
+512,semantic,q27,pytest tmp_path for tests that write files,0.2,1.0,1.0,1.0,2.8864,python/pytest-notes.md
+512,semantic,q28,report word limit and submission deadline,0.2,1.0,1.0,1.0,3.2383,module/assignment-brief.md
+512,semantic,q29,threats to validity from writing and judging my own evaluation set,0.4,0.6667,0.25,0.3836,3.005,module/assignment-brief.md
+512,semantic,q30,effect size versus statistical significance,0.4,1.0,1.0,1.0,3.2846,stats/effect-size.md
+512,keyword,q01,how does approximate nearest neighbour search work,0.4,1.0,1.0,0.9197,0.0377,retrieval/ann-search.md
+512,keyword,q02,why is it quicker to settle for a slightly wrong match when looking things up by vector,0.2,0.5,1.0,0.6131,0.0485,retrieval/fuzzy-vector-lookup.md
+512,keyword,q03,what does it actually mean for two pieces of text to be alike,0.4,1.0,1.0,0.8772,0.0382,embeddings/measuring-closeness.md
+512,keyword,q04,should I scale vectors to the same length before I compare them,0.4,1.0,1.0,0.8772,0.0472,embeddings/measuring-closeness.md
+512,keyword,q05,how do I tell whether a gap between two systems is real or just luck,0.6,1.0,1.0,1.0,0.0544,stats/hypothesis-testing.md
+512,keyword,q06,cutting a long document into pieces before indexing it,0.0,0.0,0.0,0.0,0.0329,module/supervisor-meeting-11-feb.md
+512,keyword,q07,keeping my notes on my own machine instead of sending them to a company,0.0,0.0,0.0,0.0,0.0491,retrieval/fuzzy-vector-lookup.md
+512,keyword,q08,why the tool never writes an answer of its own,0.0,0.0,0.0,0.0,0.0342,python/pytest-notes.md
+512,keyword,q09,I know I wrote something down but I cannot remember which words I used,0.2,1.0,1.0,1.0,0.0576,misc/writing-workflow.md
+512,keyword,q10,how does the model break unusual words into smaller units,0.2,1.0,1.0,1.0,0.0407,embeddings/subword-tokenisation.md
+512,keyword,q11,externally-managed-environment,0.2,1.0,1.0,1.0,0.0164,python/venv-and-pip.md
+512,keyword,q12,PYTORCH_ENABLE_MPS_FALLBACK,0.2,1.0,1.0,1.0,0.0085,misc/laptop-setup.md
+512,keyword,q13,describe_index_stats,0.2,1.0,1.0,1.0,0.0076,retrieval/vector-databases.md
+512,keyword,q14,SHUREC7 ethics reference,0.2,1.0,1.0,1.0,0.0167,module/ethics-approval.md
+512,keyword,q15,karpukhin2020dpr,0.4,1.0,1.0,1.0,0.0088,module/reading-list.md
+512,keyword,q16,could not broadcast input array from shape,0.2,1.0,1.0,1.0,0.0338,python/numpy-broadcasting.md
+512,keyword,q17,snakeviz,0.2,1.0,1.0,1.0,0.008,python/profiling-and-timing.md
+512,keyword,q18,what do the k1 and b parameters in BM25 do,0.2,1.0,1.0,1.0,0.0325,retrieval/bm25-and-tfidf.md
+512,keyword,q19,how is nDCG calculated,0.2,1.0,1.0,1.0,0.0221,retrieval/evaluation-metrics.md
+512,keyword,q20,how many dimensions should the embeddings have,0.2,1.0,1.0,1.0,0.0332,embeddings/embedding-dimensions.md
+512,keyword,q21,maximum sequence length of all-MiniLM-L6-v2,0.4,1.0,1.0,0.9197,0.0362,embeddings/sentence-transformers.md
+512,keyword,q22,in-batch negatives during training,0.2,1.0,1.0,1.0,0.0221,embeddings/contrastive-training.md
+512,keyword,q23,combining a dense ranking and a keyword ranking without tuning a weight,0.2,1.0,1.0,1.0,0.0393,retrieval/hybrid-fusion.md
+512,keyword,q24,how should I measure query latency properly,0.4,1.0,0.5,0.6934,0.0364,retrieval/ann-search.md
+512,keyword,q25,when should a dataclass be frozen,0.2,1.0,1.0,1.0,0.0192,python/dataclasses.md
+512,keyword,q26,argparse subcommand with an option that can be repeated,0.2,1.0,1.0,1.0,0.0293,python/argparse-subcommands.md
+512,keyword,q27,pytest tmp_path for tests that write files,0.2,1.0,1.0,1.0,0.0274,python/pytest-notes.md
+512,keyword,q28,report word limit and submission deadline,0.2,1.0,1.0,1.0,0.0283,module/assignment-brief.md
+512,keyword,q29,threats to validity from writing and judging my own evaluation set,0.4,0.6667,1.0,0.7654,0.0408,retrieval/evaluation-metrics.md
+512,keyword,q30,effect size versus statistical significance,0.4,1.0,1.0,1.0,0.03,stats/hypothesis-testing.md

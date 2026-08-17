@@ -1,0 +1,239 @@
+# Thirty queries over the demo corpus in data/notes.
+#
+# Relevance is judged at note level and is binary: a note is listed if it is one I would be
+# annoyed not to see in the top five. Judgements were made by reading the corpus, by one
+# person, which is a limitation stated in the report rather than solved here.
+#
+# Every query carries a category, and the evaluation groups its by-type breakdown on it.
+# The three values are:
+#
+#   paraphrase   the query is in my words rather than the note's, so a term match cannot
+#                reach the note that answers it
+#   exact-token  the query is a literal string lifted out of a note: an identifier, an error
+#                message, a citation key, a form code
+#   lookup       an ordinary question whose words also appear in the note
+#
+# The intended mix was the first ten as paraphrases, seven exact tokens and thirteen
+# lookups. Going back over them query by query it came out as ten, eight and twelve, and the
+# three that moved are worth naming. q01 asks about approximate nearest neighbour search in
+# the formal words that are the title of the note answering it, so it is a lookup even
+# though its second relevant note can only be reached semantically. q21 turns on the model
+# identifier all-MiniLM-L6-v2 rather than on any phrasing, which puts it with the exact
+# tokens. q29 sits at the end among the lookups but asks about threats to validity in words
+# that appear nowhere in the corpus, so it is a paraphrase.
+
+queries:
+  - id: q01
+    query: how does approximate nearest neighbour search work
+    category: lookup
+    relevant_notes: [retrieval/ann-search.md, retrieval/fuzzy-vector-lookup.md]
+    note: >
+      ann-search.md uses the formal terms, fuzzy-vector-lookup.md explains the same graph
+      and clustering ideas without ever using them. The second one is what keyword search
+      cannot reach.
+
+  - id: q02
+    query: why is it quicker to settle for a slightly wrong match when looking things up by vector
+    category: paraphrase
+    relevant_notes: [retrieval/fuzzy-vector-lookup.md, retrieval/ann-search.md]
+    note: >
+      The trade of accuracy for speed is the subject of both notes. Phrased in the informal
+      note's vocabulary, so the formal note is the harder of the two to find.
+
+  - id: q03
+    query: what does it actually mean for two pieces of text to be alike
+    category: paraphrase
+    relevant_notes: [embeddings/measuring-closeness.md, embeddings/cosine-vs-dot-product.md]
+    note: >
+      measuring-closeness.md is the plain-language version and deliberately avoids the word
+      cosine, so a term match cannot find it from this query.
+
+  - id: q04
+    query: should I scale vectors to the same length before I compare them
+    category: paraphrase
+    relevant_notes: [embeddings/cosine-vs-dot-product.md, embeddings/measuring-closeness.md]
+    note: >
+      Both notes argue for normalising first, one with the formula and one with the arrows
+      analogy.
+
+  - id: q05
+    query: how do I tell whether a gap between two systems is real or just luck
+    category: paraphrase
+    relevant_notes:
+      - stats/is-the-difference-real.md
+      - stats/hypothesis-testing.md
+      - stats/bootstrap-confidence-intervals.md
+    note: >
+      is-the-difference-real.md asks exactly this in everyday words; the other two give the
+      formal test and the interval that answer it.
+
+  - id: q06
+    query: cutting a long document into pieces before indexing it
+    category: paraphrase
+    relevant_notes: [retrieval/chunking-strategies.md]
+    note: The only note about how the indexing unit is chosen.
+
+  - id: q07
+    query: keeping my notes on my own machine instead of sending them to a company
+    category: paraphrase
+    relevant_notes: [module/ethics-approval.md, retrieval/vector-databases.md]
+    note: >
+      The ethics note gives the reason the local backend exists; the Pinecone note admits
+      the privacy argument weakens once vectors leave the laptop.
+
+  - id: q08
+    query: why the tool never writes an answer of its own
+    category: paraphrase
+    relevant_notes: [module/supervisor-meeting-11-feb.md, module/presentation-plan.md]
+    note: >
+      The decision to cut generation was made in the supervision and is a slide in the
+      presentation plan. Neither note uses the words in the query.
+
+  - id: q09
+    query: I know I wrote something down but I cannot remember which words I used
+    category: paraphrase
+    relevant_notes: [misc/writing-workflow.md]
+    note: The closing paragraph of that note is this exact complaint, in other words.
+
+  - id: q10
+    query: how does the model break unusual words into smaller units
+    category: paraphrase
+    relevant_notes: [embeddings/subword-tokenisation.md]
+    note: Straight paraphrase of the note's subject without the term subword.
+
+  - id: q11
+    query: externally-managed-environment
+    category: exact-token
+    relevant_notes: [python/venv-and-pip.md]
+    note: Exact error string, appears in one note. BM25 should win this outright.
+
+  - id: q12
+    query: PYTORCH_ENABLE_MPS_FALLBACK
+    category: exact-token
+    relevant_notes: [misc/laptop-setup.md]
+    note: Rare environment variable, one note. Another clear keyword case.
+
+  - id: q13
+    query: describe_index_stats
+    category: exact-token
+    relevant_notes: [retrieval/vector-databases.md]
+    note: >
+      A specific API call named once. An embedding has nothing much to work with in a bare
+      identifier.
+
+  - id: q14
+    query: SHUREC7 ethics reference
+    category: exact-token
+    relevant_notes: [module/ethics-approval.md]
+    note: The form code appears in exactly one note.
+
+  - id: q15
+    query: karpukhin2020dpr
+    category: exact-token
+    relevant_notes: [module/reading-list.md, misc/latex-and-references.md]
+    note: >
+      The citation key is written out in both notes, once as a reading entry and once as an
+      example of a stable bibtex key.
+
+  - id: q16
+    query: could not broadcast input array from shape
+    category: exact-token
+    relevant_notes: [python/numpy-broadcasting.md]
+    note: Verbatim numpy error message, quoted in one note.
+
+  - id: q17
+    query: snakeviz
+    category: exact-token
+    relevant_notes: [python/profiling-and-timing.md]
+    note: A tool named once in the whole corpus.
+
+  - id: q18
+    query: what do the k1 and b parameters in BM25 do
+    category: lookup
+    relevant_notes: [retrieval/bm25-and-tfidf.md]
+    note: Both parameters are explained in that note and nowhere else.
+
+  - id: q19
+    query: how is nDCG calculated
+    category: lookup
+    relevant_notes: [retrieval/evaluation-metrics.md]
+    note: The metrics note works the discount and the ideal DCG through with an example.
+
+  - id: q20
+    query: how many dimensions should the embeddings have
+    category: lookup
+    relevant_notes: [embeddings/embedding-dimensions.md]
+    note: The whole note is the 384 against 768 question.
+
+  - id: q21
+    query: maximum sequence length of all-MiniLM-L6-v2
+    category: exact-token
+    relevant_notes: [embeddings/sentence-transformers.md, embeddings/subword-tokenisation.md]
+    note: >
+      The model note gives the 256 word piece limit; the tokenisation note explains why a
+      512-token chunk exceeds it.
+
+  - id: q22
+    query: in-batch negatives during training
+    category: lookup
+    relevant_notes: [embeddings/contrastive-training.md]
+    note: The only note on how the encoder was trained.
+
+  - id: q23
+    query: combining a dense ranking and a keyword ranking without tuning a weight
+    category: lookup
+    relevant_notes: [retrieval/hybrid-fusion.md]
+    note: >
+      The fusion note argues precisely against weighted score combination. The reading list
+      cites the paper but does not discuss the method, so it is not counted.
+
+  - id: q24
+    query: how should I measure query latency properly
+    category: lookup
+    relevant_notes: [retrieval/query-latency.md, python/profiling-and-timing.md]
+    note: >
+      One note is about reporting median and p95 for search, the other about the timing
+      tools. Both answer the question.
+
+  - id: q25
+    query: when should a dataclass be frozen
+    category: lookup
+    relevant_notes: [python/dataclasses.md]
+    note: Direct lookup with an obvious single answer.
+
+  - id: q26
+    query: argparse subcommand with an option that can be repeated
+    category: lookup
+    relevant_notes: [python/argparse-subcommands.md]
+    note: The append action trap is described only there.
+
+  - id: q27
+    query: pytest tmp_path for tests that write files
+    category: lookup
+    relevant_notes: [python/pytest-notes.md]
+    note: Direct lookup, shares the fixture name with the note so both methods should find it.
+
+  - id: q28
+    query: report word limit and submission deadline
+    category: lookup
+    relevant_notes: [module/assignment-brief.md]
+    note: The brief summary is the only note with the word count and the dates.
+
+  - id: q29
+    query: threats to validity from writing and judging my own evaluation set
+    category: paraphrase
+    relevant_notes:
+      - stats/sampling-and-bias.md
+      - retrieval/evaluation-metrics.md
+      - stats/is-the-difference-real.md
+    note: >
+      All three admit the same problem from different angles: the sampling note at length,
+      the metrics note in its closing paragraph, the informal stats note in its last line.
+
+  - id: q30
+    query: effect size versus statistical significance
+    category: lookup
+    relevant_notes: [stats/effect-size.md, stats/hypothesis-testing.md]
+    note: >
+      The effect size note opens on this distinction and the testing note closes on the
+      matching warning about p-values.
